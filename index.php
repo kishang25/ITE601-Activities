@@ -1,8 +1,4 @@
-<?php include "Database.php"; ?>
+<?php 
 
-<?php
-	
-$database = new Database();
-$database->connect();
-
+	echo "AMBOT SMO DA!"
 ?>
