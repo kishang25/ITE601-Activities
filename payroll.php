@@ -11,26 +11,20 @@ class payroll {
 
 	public function computeNet() {
 
-		$sub = $this->salary - $this->tax; 
+		return $net = $this->salary - $this->tax; 
 
 	｝
 
 	public function getEmployeeName() : string { 
 
-		return $this->fname . " " . $this->lname;
-
-	｝
-
-	public function displayNet() : string {
-
-		return number_format ($this->computeNet(),2);		
+		return $employee = $this->fname. " " . $this->lname;
 
 	｝
 
 		$payroll = new payroll();
 
 			echo "Employee Name: ". $payroll->getEmployeeName() . "‹br/›"; 
-			echo "Net: ". $payroll->displayNet();
+			echo "Net: ". $payroll->computeNet();
 
 
 ?>
