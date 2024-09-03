@@ -1,5 +1,8 @@
+<?php include "Database.php"; ?>
+
 <?php
 	
-	echo "Hi!"
+$database = new Database();
+$database->connect();
 
 ?>
