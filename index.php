@@ -1,4 +1,4 @@
 <?php 
 
-	echo "AMBOT SMO DA!"
+	echo "SPEEDING SO MUCH??!"
 ?>
