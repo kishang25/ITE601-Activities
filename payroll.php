@@ -1,7 +1,6 @@
 <?php
 
 class payroll {
-
 	private string $fname = "John";
 	private string $lname = "Volta";
 
@@ -9,22 +8,25 @@ class payroll {
 	private float $salary = 500;
 
 
-	public function computeNet() {
-
+	public function computeNet(): float {
 		return $net = $this->salary - $this->tax; 
-
-	｝
+	}
 
 	public function getEmployeeName() : string { 
+		return $this->fname. " " . $this->lname;
+	}
 
-		return $employee = $this->fname. " " . $this->lname;
+	public function displayNet(): string {
+		return number_format($this->computeNet(),2);
+    }
+}
 
-	｝
+	$payroll = new payroll();
+		echo "Employee Name: ". $payroll->getEmployeeName() . "<br/>";
+		echo "Net: ". $payroll->computeNet();
 
-		$payroll = new payroll();
 
-			echo "Employee Name: ". $payroll->getEmployeeName() . "‹br/›"; 
-			echo "Net: ". $payroll->computeNet();
+
 
 
 ?>
